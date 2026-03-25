@@ -42,6 +42,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
+# Regional properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24821/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24821/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24875/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/24875/build.IN.prop 
+
 # Power
 $(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 
