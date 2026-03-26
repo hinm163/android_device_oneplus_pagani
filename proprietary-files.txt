@@ -5,10 +5,6 @@ odm/etc/acdbdata/acdb_cal.acdb:vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb
 odm/etc/acdbdata/up_ve_enpuv5_ha.eai
 odm/etc/acdbdata/up_ve_enpuv5_hh.eai
 
-# ADSP modules
-odm/lib/rfsa/adsp/libtfadsp_sb5_5_rx.so
-odm/lib/rfsa/adsp/libtfadsp_sb5_5_tx.so
-
 # Audio
 odm/lib64/liboprec_audrec.so
 odm/lib64/liboprec_audrec_wrapper.so
@@ -111,23 +107,23 @@ odm/etc/camera/config/oplus_camera_aps_config
 odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/oplus_camera_preview_decision_config.json
 odm/etc/camera/config/oplus_preview_decision_params.json
-odm/etc/camera/config/paganiFront
-odm/etc/camera/config/paganiMain
-odm/etc/camera/config/paganiTele
+odm/etc/camera/config/paganiInFront
+odm/etc/camera/config/paganiInMain
+odm/etc/camera/config/paganiInTele
 odm/etc/camera/config/pickref_params.xml
 odm/etc/camera/config/quick_visibility_white_list
 odm/etc/camera/config/sr_params.xml
 odm/etc/camera/config/video_beauty_default_config
-odm/etc/camera/dng/ColorMatrix1_paganiMain.txt
-odm/etc/camera/dng/ColorMatrix1_paganiTele.txt
-odm/etc/camera/dng/ColorMatrix2_paganiMain.txt
-odm/etc/camera/dng/ColorMatrix2_paganiTele.txt
-odm/etc/camera/dng/D28HUESATMap_paganiMain.txt
-odm/etc/camera/dng/D28HUESATMap_paganiTele.txt
-odm/etc/camera/dng/D65HUESATMap_paganiMain.txt
-odm/etc/camera/dng/D65HUESATMap_paganiTele.txt
-odm/etc/camera/dng/ToneCurve_paganiMain.txt
-odm/etc/camera/dng/ToneCurve_paganiTele.txt
+odm/etc/camera/dng/ColorMatrix1_paganiInMain.txt
+odm/etc/camera/dng/ColorMatrix1_paganiInTele.txt
+odm/etc/camera/dng/ColorMatrix2_paganiInMain.txt
+odm/etc/camera/dng/ColorMatrix2_paganiInTele.txt
+odm/etc/camera/dng/D28HUESATMap_paganiInMain.txt
+odm/etc/camera/dng/D28HUESATMap_paganiInTele.txt
+odm/etc/camera/dng/D65HUESATMap_paganiInMain.txt
+odm/etc/camera/dng/D65HUESATMap_paganiInTele.txt
+odm/etc/camera/dng/ToneCurve_paganiInMain.txt
+odm/etc/camera/dng/ToneCurve_paganiInTele.txt
 odm/etc/camera/facerestore/fr_models/BDET.bin
 odm/etc/camera/facerestore/fr_models/BG.bin
 odm/etc/camera/facerestore/fr_models/DB.bin
@@ -484,9 +480,6 @@ odm/etc/camera/livephoto_coverenhancer/libs/libtrace.so
 odm/etc/camera/livephoto_coverenhancer/libs/libzlib.so
 odm/etc/camera/livephoto_coverenhancer/models/RRDBNet_sm8750.bin
 odm/etc/camera/livephoto_coverenhancer/models/license_release_gallery.lic
-odm/etc/camera/meishe_lut/800t_blues.bin
-odm/etc/camera/meishe_lut/800t_hdr.bin
-odm/etc/camera/meishe_lut/800t_sdr.bin
 odm/etc/camera/meishe_lut/ByYo3If
 odm/etc/camera/meishe_lut/Cold.cube.rgb.bin
 odm/etc/camera/meishe_lut/DL_A_MoneyBall.bin
@@ -510,13 +503,11 @@ odm/etc/camera/meishe_lut/Winterfell.cube.rgb.bin
 odm/etc/camera/meishe_lut/black_gold.bin
 odm/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin
 odm/etc/camera/meishe_lut/bright_coloured.bin
-odm/etc/camera/meishe_lut/ceremony.rgba.bin
 odm/etc/camera/meishe_lut/city.cube.rgb.bin
 odm/etc/camera/meishe_lut/cola.bin
 odm/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/drjw1994.bin
 odm/etc/camera/meishe_lut/drjw2010.bin
-odm/etc/camera/meishe_lut/festival.rgba.bin
 odm/etc/camera/meishe_lut/fuji-cc-high.bin
 odm/etc/camera/meishe_lut/fuji-cc-low.bin
 odm/etc/camera/meishe_lut/fuji-eterna-v2.cube.rgb.bin
@@ -568,7 +559,6 @@ odm/etc/camera/meishe_lut/red-red.cube.rgb.bin
 odm/etc/camera/meishe_lut/sky-blue.cube.rgb.bin
 odm/etc/camera/meishe_lut/tone-of-light.cube.rgb.bin
 odm/etc/camera/meishe_lut/tree-green.cube.rgb.bin
-odm/etc/camera/meishe_lut/vibe.rgba.bin
 odm/etc/camera/meishe_lut/vivid-cool.cube.rgb.bin
 odm/etc/camera/meishe_lut/vivid-lut.cube.rgb.bin
 odm/etc/camera/meishe_lut/vivid-warm.cube.rgb.bin
@@ -576,8 +566,6 @@ odm/etc/camera/model/DocDetectV15.xbin
 odm/etc/camera/model/auto_crop_model.tflite
 odm/etc/camera/model/license.lic
 odm/etc/camera/model/obj_det.tflite
-odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e51.bundle
-odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle
 odm/etc/camera/pfb_bin/PreCalVarBinary.bin
 odm/etc/camera/pfb_bin/PreHighPassBinary.bin
 odm/etc/camera/pfb_bin/PreHighPassPreBinary.bin
@@ -684,24 +672,24 @@ odm/lib64/camera/components/libcamxoemsatsoftwarefusionwrapper.so
 odm/lib64/camera/components/libcamxoemsatwrapper.so
 odm/lib64/camera/components/libopluscolorsensorwrapper.so
 odm/lib64/camera/awb_parameter_default.bin
-odm/lib64/camera/awb_parameter_paganiFront.bin
-odm/lib64/camera/awb_parameter_paganiMain.bin
-odm/lib64/camera/awb_parameter_paganiTele.bin
-odm/lib64/camera/awb_parameter_paganiWide.bin
-odm/lib64/camera/com.qti.sensor.paganiFront.so
-odm/lib64/camera/com.qti.sensor.paganiMain.so
-odm/lib64/camera/com.qti.sensor.paganiTele.so
-odm/lib64/camera/com.qti.sensor.paganiWide.so
-odm/lib64/camera/com.qti.sensormodule.paganiFront.bin
-odm/lib64/camera/com.qti.sensormodule.paganiMain.bin
-odm/lib64/camera/com.qti.sensormodule.paganiTele.bin
-odm/lib64/camera/com.qti.sensormodule.paganiWide.bin
+odm/lib64/camera/awb_parameter_paganiInFront.bin
+odm/lib64/camera/awb_parameter_paganiInMain.bin
+odm/lib64/camera/awb_parameter_paganiInTele.bin
+odm/lib64/camera/awb_parameter_paganiInWide.bin
+odm/lib64/camera/com.qti.sensor.paganiInFront.so
+odm/lib64/camera/com.qti.sensor.paganiInMain.so
+odm/lib64/camera/com.qti.sensor.paganiInTele.so
+odm/lib64/camera/com.qti.sensor.paganiInWide.so
+odm/lib64/camera/com.qti.sensormodule.paganiInFront.bin
+odm/lib64/camera/com.qti.sensormodule.paganiInMain.bin
+odm/lib64/camera/com.qti.sensormodule.paganiInTele.bin
+odm/lib64/camera/com.qti.sensormodule.paganiInWide.bin
 odm/lib64/camera/com.qti.sensorsocmap.socid_map.bin
 odm/lib64/camera/com.qti.tuned.default.sun.bin
-odm/lib64/camera/com.qti.tuned.paganiFront.bin
-odm/lib64/camera/com.qti.tuned.paganiMain.bin
-odm/lib64/camera/com.qti.tuned.paganiTele.bin
-odm/lib64/camera/com.qti.tuned.paganiWide.bin
+odm/lib64/camera/com.qti.tuned.paganiInFront.bin
+odm/lib64/camera/com.qti.tuned.paganiInMain.bin
+odm/lib64/camera/com.qti.tuned.paganiInTele.bin
+odm/lib64/camera/com.qti.tuned.paganiInWide.bin
 odm/lib64/camera/libaecCustomParam_Cam0.bin
 odm/lib64/camera/libaecCustomParam_Cam1.bin
 odm/lib64/camera/libaecCustomParam_Cam2.bin
@@ -799,8 +787,7 @@ odm/lib64/libc++_shared.so
 odm/lib64/libcam.odnn.interface.so
 odm/lib64/libcam.oplus.3a.v2.so
 odm/lib64/libcam.oplus.3a.v3.so
-odm/lib64/libcreateFDCLitecachebin.so
-odm/lib64/libcreateFDCcachebin.so
+odm/lib64/libcam.oplus.3a.v4.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcreatebinForBaseretouch.so
 odm/lib64/libcreatebinForFaceretouch.so
@@ -1020,7 +1007,7 @@ vendor/lib64/camera/com.qti.tuned.shinetech_imx688_rear.sun.bin
 vendor/lib64/camera/com.qti.tuned.shinetech_ov32c.sun.bin
 vendor/lib64/camera/com.qti.tuned.sony_imx888.sun.bin
 vendor/lib64/camera/com.qti.tuned.tpg.sun.bin
-vendor/lib64/camera/paganiFront_3.pb
+vendor/lib64/camera/paganiInFront_3.pb
 vendor/lib64/camera/fdconfigoffline.bin
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
@@ -1220,10 +1207,7 @@ vendor/firmware/CAMERA_ICP_1.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 
 # Charger firmware
-odm/firmware/fastchg/24821/charging_hyper_mode_config.txt
-odm/firmware/fastchg/batt_dchg_ctrl_config_table.txt
-odm/firmware/fastchg/batt_eis_config.txt
-odm/firmware/fastchg/batt_si_loss_config_table.txt
+odm/firmware/fastchg/24875/charging_hyper_mode_config.txt
 odm/firmware/fastchg/bms_heating_config.txt
 odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/firmware/fastchg/smart_chg_config_table.txt
@@ -1264,6 +1248,18 @@ odm/etc/sdm_display_resolution_extn.xml:vendor/etc/display/sdm_display_resolutio
 vendor/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
 vendor/etc/spr_cfg_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
 
+
+# eSIM
+#odm/bin/hw/vendor.oplus.hardware.esim@1.0-service
+#odm/etc/init/esim@1.0-service.rc
+#odm/etc/vintf/manifest/manifest_oplus_esim.xml
+
+# eUICC
+#my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
+#my_product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+
+
+
 # Fingerprint firmware
 odm/firmware/uff_jv.b00
 odm/firmware/uff_jv.b01
@@ -1287,8 +1283,8 @@ odm/firmware/uff_spi.b08
 odm/firmware/uff_spi.mdt
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN220.conf_24821:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_24821:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-mtp-SN220.conf_24875:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_24875:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # Sensors
@@ -1297,7 +1293,6 @@ vendor/lib64/sensors.qsh.so
 # Sensors config
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lux_aod.json
-odm/etc/sensor/config/oplus_rotation_detect.json
 odm/etc/sensor/config/pagani_qrd_ois_system.json
 odm/etc/sensor/config/pakala_mtp_ak09919.json
 odm/etc/sensor/config/pakala_mtp_alsps.json
@@ -1313,7 +1308,7 @@ odm/etc/sensor/config/sns_gyro_cal.json
 odm/etc/sensor/sensor_config.json
 vendor/etc/sensors/config/json.lst
 vendor/etc/sensors/config/qsh_camera_common.json
-vendor/etc/sensors/config/qsh_camera_paganiFront_3.json
+vendor/etc/sensors/config/qsh_camera_paganiInFront_3.json
 vendor/etc/sensors/config/qsh_camera_imx480_3.json
 vendor/etc/sensors/config/qsh_camera_imx615_3.json
 vendor/etc/sensors/config/qsh_camera_imx688_6.json
@@ -1369,7 +1364,6 @@ odm/etc/vibrator/809/def/effect_304.bin
 odm/etc/vibrator/809/def/effect_305.bin
 odm/etc/vibrator/809/def/effect_308.bin
 odm/etc/vibrator/809/def/effect_318.bin
-odm/etc/vibrator/809/def/effect_362.bin
 odm/etc/vibrator/809/def/effect_363.bin
 odm/etc/vibrator/809/def/effect_364.bin
 odm/etc/vibrator/809/def/effect_365.bin
