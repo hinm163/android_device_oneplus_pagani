@@ -1250,12 +1250,12 @@ vendor/etc/spr_cfg_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
 
 
 # eSIM
-#odm/bin/hw/vendor.oplus.hardware.esim@1.0-service
-#odm/etc/init/esim@1.0-service.rc
-#odm/etc/vintf/manifest/manifest_oplus_esim.xml
+odm/bin/hw/vendor.oplus.hardware.esim@1.0-service
+odm/etc/init/esim@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_esim.xml
 
 # eUICC
-#my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
+my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
 #my_product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 
