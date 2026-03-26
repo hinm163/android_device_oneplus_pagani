@@ -1,0 +1,11 @@
+# Device info
+ro.product.odm.device=OP612BL1
+ro.product.odm.model=CPH2723
+ro.product.odm.name=CPH2723
+ro.vendor.oplus.regionmark=IN
+
+#esim
+ro.vendor.oplus.radio.esim.feature=2
+
+# NFC
+persist.vendor.nfc.config_file_name=libnfc-mtp-SN220.conf_24875 
