@@ -1,6 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13T (PKX110_16.0.3.501(CN01)).
-
+## are from OnePlus 13s (CPH2723_16.0.2.211(EX01)).
 # ACDB
 odm/etc/acdbdata/acdb_cal.acdb:vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb
 odm/etc/acdbdata/up_ve_enpuv5_ha.eai
@@ -15,7 +14,6 @@ odm/lib64/liboprec_audrec.so
 odm/lib64/liboprec_audrec_wrapper.so
 
 # Audio configs
-odm/etc/mixer_paths.xml
 odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
 

@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13T (PKX110_16.0.3.501(CN01)).
+## are from OnePlus 13s (CPH2723_16.0.2.211(EX01)).
 
 abl.img;AB
 aop.img;AB
@@ -16,6 +16,7 @@ imagefv.img;AB
 keymaster.img;AB
 modem.img;AB
 oplus_sec.img;AB
+oplusstanvbk.img;AB
 pdp.img;AB
 pdp_cdb.img;AB
 pvmfw.img;AB
