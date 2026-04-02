@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13s (CPH2723_16.0.211(EX01)).
+## are from OnePlus 13s (CPH2723_16.3.501(EX01)).
 
 # ACDB
 odm/etc/acdbdata/acdb_cal.acdb:vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb
@@ -658,7 +658,6 @@ odm/lib64/libapspng.so
 odm/lib64/libapsultrahdr.so
 odm/lib64/libapsyuv.so
 odm/lib64/libarc.ion.so
-odm/lib64/libcam.oplus.3a.v4.so
 odm/lib64/libarcsoft_ai_moon.so
 odm/lib64/libarcsoft_dualcam_bokeh_api.so
 odm/lib64/libarcsoft_dualcam_bokeh_image.so
@@ -708,6 +707,8 @@ odm/lib64/liboutils.so
 odm/lib64/libpngwrapper.so
 odm/lib64/libsat.so
 odm/lib64/libsaveshaderbin.so
+odm/lib64/libcreateFDCcachebin.so
+odm/lib64/libcreateFDCLitecachebin.so
 odm/lib64/libsegmentPrePostProc.so
 odm/lib64/libsensorbridge.so
 odm/lib64/libsharebuffer.so
@@ -1084,19 +1085,21 @@ odm/lib64/camera/com.qti.tuned.paganiInMain.bin
 odm/lib64/camera/com.qti.tuned.paganiInTele.bin
 odm/lib64/camera/com.qti.tuned.paganiInWide.bin
 
-# camera pagani from PKX110_16.0.213
+odm/lib64/hw/camera.oemlayer.so
+
+# camera pagani from PKX110_16.3.501
 odm/lib64/camera/awb_parameter_paganiFront.bin|8dc824b112870e97249257819d56472c4735029d
 odm/lib64/camera/awb_parameter_paganiMain.bin|60200e85595eae14c67e79af43c3957709eb5dda
 odm/lib64/camera/awb_parameter_paganiTele.bin|fe95c5608f70239c28a30cb5ad36d26774574f4c
 odm/lib64/camera/awb_parameter_paganiWide.bin|60200e85595eae14c67e79af43c3957709eb5dda
-odm/lib64/camera/com.qti.sensormodule.paganiFront.bin|bc007e07592f495b3384c1b5dc1ff16958c05713
-odm/lib64/camera/com.qti.sensormodule.paganiMain.bin|9db0bf30a92bf67e6aa8873d5c77240fdd3480a2
-odm/lib64/camera/com.qti.sensormodule.paganiTele.bin|2aee8d2266a3c035afb1ef09f224fbd775dc0e5f
-odm/lib64/camera/com.qti.sensormodule.paganiWide.bin|015fb72225165afadae093ed1f5f3e840b8c5c9f
+odm/lib64/camera/com.qti.sensormodule.paganiFront.bin|49f6f20347e45bbd3182c7285bed59aa2b03361f
+odm/lib64/camera/com.qti.sensormodule.paganiMain.bin|fe7dde7c865342af7d071a66d2c2de8552e07a4c
+odm/lib64/camera/com.qti.sensormodule.paganiTele.bin|8814cbe8a223d07ac8f6ffaee8c18a63ca51b5ad
+odm/lib64/camera/com.qti.sensormodule.paganiWide.bin|643e8bad5a336bebdede09e7561ad851ef18c594
 odm/lib64/camera/com.qti.sensor.paganiFront.so|f8f8e35e25ea64bd3dba95c1f45c5295512d4832
 odm/lib64/camera/com.qti.sensor.paganiMain.so|38d93a97ad0d963217ddcce27c85b3089ec0d6fb
 odm/lib64/camera/com.qti.sensor.paganiTele.so|7bdd327f3357b96de2742d00153ecab383baeb37
-odm/lib64/camera/com.qti.sensor.paganiWide.so|66947ee8bf86d5952c2ad7a9cde95705f5d18c4c
+odm/lib64/camera/com.qti.sensor.paganiWide.so|ce2aa7d0219fba6b5f34aadd6b5411ff86c55a4b
 odm/lib64/camera/com.qti.tuned.paganiFront.bin|c49643cbfd7d2084985c2045d975f1389f9252cd
 odm/lib64/camera/com.qti.tuned.paganiMain.bin|aee8d91a3f07306abe94ca36569630b6c35c097a
 odm/lib64/camera/com.qti.tuned.paganiTele.bin|2f18b07a52ae0700571e256db781b67727ac0030
@@ -1117,7 +1120,7 @@ odm/etc/camera/dng/ToneCurve_paganiTele.txt|a217479129dced381521b0470cbdbdd3f354
 odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e51.bundle|a43faba72be0a573a2d6cfcdad89fb0bbeac200b
 odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle|34930d1d1f3f1915b492cee2be2962595a1551ef
 odm/etc/camera/camera_engmode.xml|bd96e580ca6ee0aee257cea57929157ee5853e68
-odm/etc/camera/CameraHWConfiguration.config|2011d328711f7b501dbe5c6c79d903c117291c55
+odm/etc/camera/CameraHWConfiguration.config|144d2f8779f74a98e498841c36148ffb1624299d
 odm/etc/camera/eis_camera.vcfg|eda89d5e05e8b19279f7b70fd6f7ea7d42010d08
 odm/etc/camera/oplus_eis_camera.vcfg|971614703f3ad58a7cc6dd3620ed690b8f9989ea
 odm/etc/camera/settings_fdc_lite.txt|27e0f7ec249a829121ff97089012821a2e794ae4
@@ -1126,24 +1129,23 @@ odm/etc/camera/vainr_cfg.json|f4c5fcb6a0cfe79e578d504b8327f37267e1d5eb
 odm/etc/power_profile/power_profile.xml|a44d784423d6c9134df7032534678b0294c8859d
 odm/lib64/camera/com.qti.sensorsocmap.socid_map.bin|007bb9dbb8986df3db66ed425d05f441852d3669
 odm/lib64/camera/com.qti.tuned.default.sun.bin|6aa7a73d7dfa9d25f57cd8bdd99596fdb1cdc068
-odm/lib64/camera/libaecCustomParam_Cam0.bin|f73b7c821f79175c39c3361761bcf749056fe97a
-odm/lib64/camera/libaecCustomParam_Cam1.bin|f1400243547e52cb882ff82b7b292e8ade5f741e
-odm/lib64/camera/libaecCustomParam_Cam2.bin|307e4e3ddbafeb7a791a3e5ffc6796e1095532b9
-odm/lib64/camera/libaecCustomParam_Cam3.bin|accced173174a2be4139b07bfbb194b4a3d800ec
-odm/lib64/camera/libafCustomParam_Cam0.bin|3f5b6819600825def49d68c068318bc6910e322d
-odm/lib64/camera/libafCustomParam_Cam1.bin|242f4cfd3a2e7c092360440e1c9bbe6ba2b63de0
-odm/lib64/camera/libafCustomParam_Cam2.bin|c665c8750602e203d9eae8cf289f661fb3d96ca8
-odm/lib64/camera/libafCustomParam_Cam3.bin|cd6484b1d0fbd17e562744aebfbf932b1b63ecba
-odm/lib64/camera/libpdCustomParam_Cam0.bin|e521047c25be7e19e05151a53299db0b26e70e97
-odm/lib64/camera/revision.txt|778ea8cae6cb95f1d96d4e400d0799c789aa1467
-odm/lib64/hw/camera.oemlayer.so|19314ae0537b852c018846108877dacc8a62807a
+odm/lib64/camera/libaecCustomParam_Cam0.bin|790f7be4227df009e38c6b3cd312cb3408d9f603
+odm/lib64/camera/libaecCustomParam_Cam1.bin|1145985970ccfe298cf23bdad4fc90a82bba7cea
+odm/lib64/camera/libaecCustomParam_Cam2.bin|8f70dddc9715041daee972f1d6fbb6b6965cf945
+odm/lib64/camera/libaecCustomParam_Cam3.bin|9c66b924d58dee89f4863a086a20758b4f75752c
+odm/lib64/camera/libafCustomParam_Cam0.bin|871aa9c8a15abfbdf050647877992377fe008366
+odm/lib64/camera/libafCustomParam_Cam1.bin|6bfbe99ffa940fa928d2841a01c0dff4435a7da3
+odm/lib64/camera/libafCustomParam_Cam2.bin|741cc287df347382142a62b823391dd512da541d
+odm/lib64/camera/libafCustomParam_Cam3.bin|a0533b0c6362539a2aabf87853182374b150a329
+odm/lib64/camera/libpdCustomParam_Cam0.bin|7ca475301a3aa529728015613a6968fa8436e651
+odm/lib64/camera/revision.txt|354ef651de0b48a1f998f816f36936fb9a8017c9
 odm/etc/camera/config/camera_third_party_feature_config.protobuf|be7f82c3f48dc440a935551b76ace55cdd5d39b3
 odm/etc/camera/config/camera_unit_feature_config.protobuf|261d83dd135a9e1bd19799cbec6fcdd1f4201689
-odm/etc/camera/config/oplus_camera_algo_switch_config|ba6ffbad36b0c2d8f3112ab451a18491a3d5be83
-odm/etc/camera/config/oplus_camera_aps_config|34efff15ac113fd2916a9488e682e78bdafd6205
-odm/etc/camera/config/oplus_camera_config|5855a6fdbc88db360d6b609e29a3a3059e029f0a
-odm/etc/camera/config/oplus_camera_preview_decision_config.json|23c379c47597d90db7c3c89711974a7f8d780fc3
-odm/etc/camera/config/oplus_preview_decision_params.json|10c2cc4beda29f682193eaf1fe5c982ac5a3f322
+odm/etc/camera/config/oplus_camera_algo_switch_config|83d112499f46782b873bb0bc35db773b9601d9b3
+odm/etc/camera/config/oplus_camera_aps_config|d291f2d085d4c4518d42580bf2aebc7f0ad1fc74
+odm/etc/camera/config/oplus_camera_config|8cd102084077bf0f20c652b36a5dc35c0afd31ca
+odm/etc/camera/config/oplus_camera_preview_decision_config.json|5328b040043ed46b68a3b7c537378bd4d0e451f3
+odm/etc/camera/config/oplus_preview_decision_params.json|d6d9b0c801afc42ec2ceb3f2423b9cbb34f90462
 odm/etc/camera/Owl_Algo_model/Owl_Algo_F_FHD.bin|1004cec0a05f7778a4c9f246b1b16b9811fb1e44
 
 # Camera firmware
@@ -1198,14 +1200,14 @@ vendor/firmware/CAMERA_ICP_1.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 
 
-# Charger firmware from PKX110_16.0.213
-odm/firmware/fastchg/24821/charging_hyper_mode_config.txt|967404c4b2b60819a0c1add492122f17982406c8
-odm/firmware/fastchg/bms_heating_config.txt|3c79fcac689c777bd32b0794b65cc7b7b7384bd9
-odm/firmware/fastchg/charging_thermal_config_default.txt|0da4dc6e6ec28b28a675189a76a932487e0581f9
-odm/firmware/fastchg/smart_chg_config_table.txt|28fba3124db70d6d9bb658b6ed528f4c7891d152
+# Charger firmware from PKX110_16.3.501
 odm/firmware/fastchg/batt_dchg_ctrl_config_table.txt|86f1a8fd0222dab65d9d1b3b9ff6d77da11cdf27
 odm/firmware/fastchg/batt_eis_config.txt|215ec6d122b76c7e23ce19d97a2ded5f295c27bf
 odm/firmware/fastchg/batt_si_loss_config_table.txt|bde5e407d610597f8bd6b167441a8df99a4209f5
+odm/firmware/fastchg/bms_heating_config.txt|3c79fcac689c777bd32b0794b65cc7b7b7384bd9
+odm/firmware/fastchg/charging_thermal_config_default.txt|6eb0790cda4a7d1f9a168679c16572e700c095dd
+odm/firmware/fastchg/smart_chg_config_table.txt|28fba3124db70d6d9bb658b6ed528f4c7891d152
+odm/firmware/fastchg/24821/charging_hyper_mode_config.txt|d78a4acdbce836095c8014caa66da4fef78119f4
 
 
 # Display calibration data
