@@ -24,7 +24,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="qssi_64-user 16 BP2A.250605.015 1764756120256 release-keys" \
-    BuildFingerprint=OnePlus/CPH2723/OP612BL1:16/AP3A.240617.008/V.1d6b086_3e842d_3e842a:user/release-keys \
+    BuildFingerprint=OnePlus/CPH2723/OP612BL1:16/AP3A.240617.008/V.R4T3.3975a49-17901f3-17828fa:user/release-keys \
     DeviceName=OP612BL1 \
     DeviceProduct=CPH2723 \
     SystemDevice=OP612BL1 \
