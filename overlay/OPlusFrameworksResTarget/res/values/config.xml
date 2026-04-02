@@ -12,7 +12,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.001954079</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.025</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -30,8 +30,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">500</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">3000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">300</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">900</integer>
 
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
     <integer name="config_autoBrightnessLightSensorRate">200</integer>
@@ -62,25 +62,14 @@
 
          Must be overridden in platform specific overlays -->
      <integer-array name="config_autoBrightnessLevels">
-        <item>6</item>
-        <item>9</item>
-        <item>14</item>
-        <item>20</item>
+        <item>10</item>
         <item>30</item>
-        <item>46</item>
-        <item>68</item>
-        <item>103</item>
-        <item>154</item>
-        <item>231</item>
-        <item>346</item>
-        <item>519</item>
-        <item>778</item>
-        <item>1168</item>
-        <item>1752</item>
-        <item>2627</item>
-        <item>3941</item>
-        <item>8867</item>
-        <item>15000</item>
+        <item>80</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1500</item>
+        <item>3500</item>
+        <item>10000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -96,25 +85,14 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>4.0</item>
-        <item>12.0</item>
-        <item>20.0</item>
-        <item>30.0</item>
-        <item>45.0</item>
-        <item>65.0</item>
-        <item>85.0</item>
-        <item>110.0</item>
-        <item>145.0</item>
-        <item>185.0</item>
-        <item>240.0</item>
-        <item>300.0</item>
-        <item>380.0</item>
-        <item>450.0</item>
-        <item>500.0</item>
-        <item>550.0</item>
-        <item>650.0</item>
+        <item>6.0</item>
+        <item>18.0</item>
+        <item>40.0</item>
+        <item>90.0</item>
+        <item>180.0</item>
+        <item>320.0</item>
+        <item>480.0</item>
         <item>680.0</item>
-        <item>782.43</item>
         <item>782.43</item>
     </array>
 
@@ -178,7 +156,7 @@
     </integer-array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
-         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+         values in the config_screenBrightnessBacklight array.  On OLED displays these values
          should be measured with an all white image while the display is in the fully on state.
          Note that this value should *not* reflect the maximum brightness value for any high
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
@@ -350,3 +328,4 @@
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 </resources>
+
